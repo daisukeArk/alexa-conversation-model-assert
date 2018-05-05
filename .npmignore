@@ -1,9 +1,11 @@
+.editorconfig
+.git
+.gitignore
+.istanbul.yml
 coverage/
 dist/test/
+package-lock.json
 src/
 test/
-.editorconfig
-.gitignore
-package-lock.json
 tsconfig.json
 tslint.json
