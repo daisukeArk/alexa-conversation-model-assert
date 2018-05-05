@@ -1,0 +1,105 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint-microsoft-contrib"
+  ],
+  "jsRules": {},
+  "rules": {
+    "completed-docs": false,
+    "curly": true,
+    "cyclomatic-complexity": [
+      true,
+      30
+    ],
+    "export-name": false,
+    "function-name": false,
+    "interface-name": false,
+    "max-func-body-length": false,
+    "max-line-length": [
+      true,
+      140
+    ],
+    "missing-jsdoc": false,
+    "newline-before-return": false,
+    "no-any": false,
+    "no-backbone-get-set-outside-model": false,
+    "no-console": [
+      true,
+      "error"
+    ],
+    "import-name": false,
+    "no-import-side-effect": false,
+    "no-empty": false,
+    "prefer-method-signature": false,
+    "promise-function-async": false,
+    "no-http-string": [
+      true,
+      "http://localhost"
+    ],
+    "no-invalid-this": false,
+    "no-require-imports": false,
+    "no-submodule-imports": false,
+    "no-void-expression": false,
+    "object-literal-key-quotes": false,
+    "no-implicit-dependencies": false,
+    "no-increment-decrement": false,
+    "no-irregular-whitespace": true,
+    "no-relative-imports": false,
+    "no-trailing-whitespace": true,
+    "no-unnecessary-qualifier": false,
+    "no-unsafe-any": false,
+    "no-useless-files": false,
+    "object-literal-shorthand": false,
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-else",
+      "check-whitespace"
+    ],
+    "prefer-object-spread": false,
+    "promise-must-complete": false,
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "strict-boolean-expressions": false,
+    "switch-final-break": false,
+    "trailing-comma": [
+      true,
+      {
+        "singleline": "never",
+        "multiline": "never"
+      }
+    ],
+    "typedef": false,
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ],
+    "type-literal-delimiter": false,
+    "no-unnecessary-class": false,
+    "variable-name": [
+      true,
+      "allow-leading-underscore",
+      "allow-pascal-case",
+      "allow-snake-case",
+      "check-format"
+    ]
+  },
+  "rulesDirectory": []
+}

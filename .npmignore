@@ -1,0 +1,9 @@
+coverage/
+dist/test/
+src/
+test/
+.editorconfig
+.gitignore
+package-lock.json
+tsconfig.json
+tslint.json
