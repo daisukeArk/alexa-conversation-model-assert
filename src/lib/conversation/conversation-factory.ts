@@ -24,7 +24,7 @@ export class ConversationFactory {
     let promises = Promise.resolve<AskModel.ResponseEnvelope>({ version: '1.0', response: {} });
 
     return {
-      requestIntent(intentName: string, conditionRequest: IRequestIntentCondition): IConversationBuilder {
+      requestIntent(intentName: string, conditionRequest?: IRequestIntentCondition): IConversationBuilder {
         requestIntentIndex++;
         scenarios[requestIntentIndex] = scenarios[requestIntentIndex] || { asserts: [] };
 
