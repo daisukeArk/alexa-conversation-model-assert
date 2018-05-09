@@ -17,7 +17,9 @@ export function getOutputSpeech(
   }
 
   result.speech = ConversationHelper.convertConversation(
-    (<AskModel.ui.SsmlOutputSpeech>scenario.envelope.response.outputSpeech).ssml,
+    (scenario.envelope.response.outputSpeech.type === 'SSML') ?
+      scenario.envelope.response.outputSpeech.ssml :
+      scenario.envelope.response.outputSpeech.text,
     isPlain
   );
 
@@ -26,7 +28,9 @@ export function getOutputSpeech(
     scenario.envelope.response.reprompt.outputSpeech
   ) {
     result.reprompt = ConversationHelper.convertConversation(
-      (<AskModel.ui.SsmlOutputSpeech>scenario.envelope.response.reprompt.outputSpeech).ssml,
+      (scenario.envelope.response.reprompt.outputSpeech.type === 'SSML') ?
+      scenario.envelope.response.reprompt.outputSpeech.ssml :
+      scenario.envelope.response.reprompt.outputSpeech.text,
       isPlain
     );
   }
