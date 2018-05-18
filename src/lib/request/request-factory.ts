@@ -12,7 +12,7 @@ export class RequestFactory {
       let model: AskModel.Request;
 
       switch (intentName) {
-        case 'LanuchRequest':
+        case 'LaunchRequest':
           model = {
             type: 'LaunchRequest',
             requestId: (
