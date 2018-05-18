@@ -6,6 +6,7 @@ Thumbs.db
 Deploy
 dist
 package-lock.json
+samples
 
 # Logs
 logs
