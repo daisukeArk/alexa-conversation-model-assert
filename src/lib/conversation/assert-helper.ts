@@ -20,6 +20,18 @@ export function assertSpeech(assertType: AssertTypes, scenario: ITestScenario, i
       assertByType(assertType, String(actual.reprompt), String(expected.reprompt));
     });
   }
+
+  if (!_.isEmpty(expected.cardTitle)) {
+    it(`cardTitle ${typeName}: ${expected.cardTitle}`, () => {
+      assertByType(assertType, String(actual.cardTitle), String(expected.cardTitle));
+    });
+  }
+
+  if (!_.isEmpty(expected.cardContent)) {
+    it(`cardContent ${typeName}: ${expected.cardContent}`, () => {
+      assertByType(assertType, String(actual.cardContent), String(expected.cardContent));
+    });
+  }
 }
 
 function assertByType(assertType: AssertTypes, actual: string, expected: string) {
