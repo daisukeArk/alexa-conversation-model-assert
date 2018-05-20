@@ -24,7 +24,7 @@ const condition: Conversation.IConversationCondition = {
 
 Conversation.init(condition)
   // インテントリクエスト
-  .requestIntent('LanuchRequest')
+  .requestIntent('LaunchRequest')
   // インテントリクエスト結果のプレーンテキスト完全一致
   .equalPlain({
     speech: 'Welcome to the Alexa Skills Kit, you can say hello!',
@@ -47,7 +47,7 @@ Conversation.init(condition)
 
 Conversation.init(condition)
   // インテントリクエスト
-  .requestIntent('LanuchRequest')
+  .requestIntent('LaunchRequest')
   .requestIntent('HelloWorldIntent')
   // HelloWorldIntent speech, cardTitle, cardContentの検証
   .equalPlain({
