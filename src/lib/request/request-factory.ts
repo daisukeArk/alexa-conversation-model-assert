@@ -1,6 +1,7 @@
 import * as AskModel from 'ask-sdk-model';
 import { IConversationCondition } from '../conditions/conversation-condition';
 import { IRequestIntentCondition } from '../conditions/request-intent-condition';
+import * as Logger from '../util/logger';
 import { IRequestBuilder } from './request-builder';
 
 export class RequestFactory {
@@ -64,7 +65,17 @@ export class RequestFactory {
             conditionRequest &&
             conditionRequest.slots
           ) {
+            Logger.warn('Deprecated: slots will remove in a future version. Please use "intent.slots".');
             model.intent.slots = conditionRequest.slots;
+          }
+
+          if (
+            conditionRequest &&
+            conditionRequest.request &&
+            conditionRequest.request.intent &&
+            conditionRequest.request.intent.slots
+          ) {
+            model.intent.slots = conditionRequest.request.intent.slots;
           }
 
           break;
