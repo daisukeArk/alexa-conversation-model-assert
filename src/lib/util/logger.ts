@@ -8,6 +8,10 @@ export function error(reason: any) {
   console.log(colors.red(`[ERROR]: ${reason}`));
 }
 
+export function warn(reason: any) {
+  console.log(colors.yellow(`[WARN]: ${reason}`));
+}
+
 export function info(reason: any) {
   console.log(colors.green(`[INFO]: ${reason}`));
 }
