@@ -2,6 +2,6 @@ import * as AskModel from 'ask-sdk-model';
 
 export interface ITestScenario {
   intentName: string;
-  asserts: any[];
+  asserts: ((scenario: ITestScenario) => void)[];
   envelope?: AskModel.ResponseEnvelope;
 }
