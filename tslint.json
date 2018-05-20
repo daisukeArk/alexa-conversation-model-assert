@@ -9,7 +9,7 @@
     "curly": true,
     "cyclomatic-complexity": [
       true,
-      30
+      40
     ],
     "export-name": false,
     "function-name": false,
@@ -49,6 +49,7 @@
     "no-unnecessary-qualifier": false,
     "no-unsafe-any": false,
     "no-useless-files": false,
+    "no-var-requires": false,
     "object-literal-shorthand": false,
     "one-line": [
       true,
