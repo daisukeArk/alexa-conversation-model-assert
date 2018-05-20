@@ -13,9 +13,9 @@ export interface IRequestIntentCondition {
     dialogState?: AskModel.DialogState;
     intent?: {
       confirmationStatus?: AskModel.IntentConfirmationStatus
-      // slots?: {
-      //   [key: string]: AskModel.Slot
-      // }
+      slots?: {
+        [key: string]: AskModel.Slot
+      }
     },
     requestId?: string
   };
