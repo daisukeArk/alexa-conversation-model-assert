@@ -5,6 +5,7 @@ export interface IConversationCondition {
   request?: {
     locale?: string;
   };
+  skillId?: string;
   testDescription: string;
   isEnabledTrace?: boolean;
 }

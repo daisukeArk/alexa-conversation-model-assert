@@ -105,11 +105,12 @@ export class RequestFactory {
               conditionRequest.session &&
               conditionRequest.session.sessionId
             ) ? conditionRequest.session.sessionId : '',
-            application: (
-              conditionRequest &&
-              conditionRequest.session &&
-              conditionRequest.session.application
-            ) ? conditionRequest.session.application : { applicationId: '' },
+            application: {
+              applicationId: (
+                condition &&
+                condition.skillId
+              ) ? condition.skillId : ''
+            },
             attributes: previousEnvelope ? previousEnvelope.sessionAttributes : {},
             user: (
               conditionRequest &&
@@ -119,12 +120,12 @@ export class RequestFactory {
           },
           context: {
             System: {
-              application: (
-                conditionRequest &&
-                conditionRequest.context &&
-                conditionRequest.context.System &&
-                conditionRequest.context.System.application
-              ) ? conditionRequest.context.System.application : { applicationId: '' },
+              application: {
+                applicationId: (
+                  condition &&
+                  condition.skillId
+                ) ? condition.skillId : ''
+              },
               user: (
                 conditionRequest &&
                 conditionRequest.context &&
