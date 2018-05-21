@@ -3,6 +3,7 @@ import * as Conversation from '../../src/index';
 
 const condition: Conversation.IConversationCondition = {
   handler: handler,
+  skillId: 'xxxx',
   request: {
     locale: 'en-US'
   },
