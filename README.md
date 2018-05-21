@@ -16,6 +16,7 @@ import { handler } from './skills/hello-world/index';
 
 const condition: Conversation.IConversationCondition = {
   handler: handler,
+  skillId: 'xxxxx',
   request: {
     locale: 'en-US'
   },
